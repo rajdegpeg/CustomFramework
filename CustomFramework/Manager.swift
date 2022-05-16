@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 //import MBProgressHUD
-//import Alamofire
+import Alamofire
 public class DegpegManager {
     
     private var authKey: String
@@ -20,20 +20,20 @@ public class DegpegManager {
     }
     
     public func test() {
-        print("Is Connected To internet")
+        print("Test")
         //print(self.isConnectedToInternet())
         
     }
     
     public func checkNetwork() {
         print("Is Connected To internet")
-        //print(self.isConnectedToInternet())
+        print(self.isConnectedToInternet())
         
     }
     
-//    public func isConnectedToInternet() -> Bool {
-//        return NetworkReachabilityManager()!.isReachable
-//    }
+    public func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
     
 //    public func HudShow(in View: UIView){
 //        MBProgressHUD().show(animated: true)
